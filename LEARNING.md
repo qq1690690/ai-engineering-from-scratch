@@ -42,5 +42,6 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 ## Progress log
 | Date | Lesson | Quiz | Note |
 |------|--------|------|------|
+| 2026-11-05 | 03-deep-learning-core/01-the-perceptron | 3/3 | Mixed up AND gate with softmax; unsure why sigmoid replaces step (gradients) — revisit in backprop |
 
 ## Review queue
