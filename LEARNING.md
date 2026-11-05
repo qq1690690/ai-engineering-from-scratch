@@ -44,5 +44,6 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 |------|--------|------|------|
 | 2026-11-05 | 03-deep-learning-core/01-the-perceptron | 3/3 | Mixed up AND gate with softmax; unsure why sigmoid replaces step (gradients) — revisit in backprop |
 | 2026-11-05 | 03-deep-learning-core/02-multi-layer-networks | 3/3 | Warm-up: confused 'linearly separable' with linear feature-label relation; counted params by #layers not width; suggested ReLU (lesson 04) |
+| 2026-11-05 | 03-deep-learning-core/03-backpropagation | 3/3 | Hand-computed full backward pass correctly; sign slip on update direction (w - lr*negative grad -> w increases); needed topological sort explained before Q3 |
 
 ## Review queue
