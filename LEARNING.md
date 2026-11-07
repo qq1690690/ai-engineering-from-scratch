@@ -47,6 +47,7 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 | 2026-11-05 | 03-deep-learning-core/03-backpropagation | 3/3 | Hand-computed full backward pass correctly; sign slip on update direction (w - lr*negative grad -> w increases); needed topological sort explained before Q3 |
 | 2026-11-05 | 03-deep-learning-core/04-activation-functions | 3/3 | Fixed sign slip from last lesson (warm-up); solid on linear collapse and dead ReLU neurons; softmax now placed correctly as output-only |
 | 2026-11-07 | 03-deep-learning-core/05-loss-functions | 2/3 | Strong on CE vs MSE gradients and softmax gradient p-y; mistook label smoothing for an LR schedule in quiz |
+| 2026-11-07 | 03-deep-learning-core/06-optimizers | 2/3 | Asked what RMSProp is for (per-parameter step scaling); got bias correction; unsure why momentum lr=0.05 stalled (effective lr x10); didn't recall Adam defaults |
 
 ## Review queue
-- 03-deep-learning-core/05-loss-functions — label smoothing (soft targets vs hard one-hot; confused with LR schedule)
+- 03-deep-learning-core/06-optimizers — Adam default hyperparameters (lr=1e-3, b1=0.9, b2=0.999, eps=1e-8); momentum's effective lr = lr/(1-beta)
