@@ -51,6 +51,7 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 | 2026-11-07 | 03-deep-learning-core/07-regularization | 2/3 | Asked what a batch is; needed BatchNorm vs LayerNorm re-explained (row vs column) before Q1; thought model.eval() enables gradients; warm-up missed Adam defaults again |
 | 2026-11-07 | 03-deep-learning-core/08-weight-initialization | 2/3 | Thought identical-init neurons would diverge after updates (they stay identical forever — showed demo); got Var(w)=1/fan_in and ReLU halving; picked 'small dataset' for when to use Xavier |
 | 2026-11-08 | 03-deep-learning-core/09-learning-rate-schedules | 3/3 | Classified lr 0.1/0.6/1.1 on x^2 correctly; good warmup reasoning; needed 1cycle explained before Q2; warm-up cleared init review item |
+| 2026-11-09 | 03-deep-learning-core/10-mini-framework | 3/3 | Said code is less familiar; thought Sequential.parameters() returns 1 (it's a flat list, 65 here) and described ReLU/Dropout behavior instead of 'no params'; training-loop order explained via dependency chain before quiz |
 
 ## Review queue
 - 03-deep-learning-core/06-optimizers — Adam default hyperparameters (lr=1e-3, b1=0.9, b2=0.999, eps=1e-8); momentum's effective lr = lr/(1-beta)
