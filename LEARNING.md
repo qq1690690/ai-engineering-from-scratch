@@ -56,9 +56,11 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 | 2026-11-10 | 03-deep-learning-core/12-intro-to-jax | 3/3 | Missed both warm-ups (autograd = autodiff engine; no_grad = no graph tracking, not freezing) -> chose a quick PyTorch review first, then got deployment check right; solid on grad/vmap/jit roles. jax not installable in env |
 | 2026-11-10 | 03-deep-learning-core/13-debugging-neural-networks | 2/3 | Good on overfit-one-batch as a control test; thought it fails due to local minimum (it only proves capacity, not absence of bugs); picked 'overfitting' for val flat from step 0 (suspect data pipeline). Used numpy demo since torch unavailable |
 | 2026-11-11 | 05-nlp-foundations-to-advanced/01-text-processing | 2/3 | Predicted regex splits of 12.3/q8h and step-1a rule-order swap correctly; lemmatize missed watched (no ed rule) and (ran,NOUN) table miss; spaCy fix = built-in POS tagger; quiz picked spaCy for transformer pipeline |
+| 2026-11-11 | 05-nlp-foundations-to-advanced/02-bag-of-words-tfidf | 2/3 | Warm-up: said ponies->ponie (ies rule gives poni). Got df/IDF (the=1), long-doc bias without L2; thought stop_words='english' keeps 'no' (it removes no/not/of/without); asked for full vectorizer-param walkthrough; quiz picked PCA for TF-IDF-weighted embedding |
 
 ## Review queue
 - 03-deep-learning-core/06-optimizers — Adam default hyperparameters (lr=1e-3, b1=0.9, b2=0.999, eps=1e-8); momentum's effective lr = lr/(1-beta)
 - 03-deep-learning-core/11-intro-to-pytorch — autograd (automatic differentiation engine) vs torch.no_grad() (skip graph tracking at inference) vs model.eval() (dropout/BatchNorm behavior)
 - 03-deep-learning-core/13-debugging-neural-networks — val loss flat from the start = suspect data pipeline (train/val mismatch), not classic overfitting; overfit-one-batch is a screen, passing doesn't prove no bug
 - 05-nlp-foundations-to-advanced/01-text-processing — transformer pipelines use the model's own paired tokenizer (token IDs must match the embedding vocab), not spaCy/NLTK; lemmatization needs correct POS
+- 05-nlp-foundations-to-advanced/02-bag-of-words-tfidf — TF-IDF weighted embedding = weighted average of token embeddings using TF-IDF scores as weights; sklearn stop_words='english' deletes negations (no/not/without)
