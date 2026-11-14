@@ -57,6 +57,7 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 | 2026-11-10 | 03-deep-learning-core/13-debugging-neural-networks | 2/3 | Good on overfit-one-batch as a control test; thought it fails due to local minimum (it only proves capacity, not absence of bugs); picked 'overfitting' for val flat from step 0 (suspect data pipeline). Used numpy demo since torch unavailable |
 | 2026-11-11 | 05-nlp-foundations-to-advanced/01-text-processing | 2/3 | Predicted regex splits of 12.3/q8h and step-1a rule-order swap correctly; lemmatize missed watched (no ed rule) and (ran,NOUN) table miss; spaCy fix = built-in POS tagger; quiz picked spaCy for transformer pipeline |
 | 2026-11-11 | 05-nlp-foundations-to-advanced/02-bag-of-words-tfidf | 2/3 | Warm-up: said ponies->ponie (ies rule gives poni). Got df/IDF (the=1), long-doc bias without L2; thought stop_words='english' keeps 'no' (it removes no/not/of/without); asked for full vectorizer-param walkthrough; quiz picked PCA for TF-IDF-weighted embedding |
+| 2026-11-14 | 05-nlp-foundations-to-advanced/03-word-embeddings-word2vec | 3/3 | Started from own question 'how are embeddings made' (warm-up skipped); saw febrile/afebrile antonyms land close; explained chased~a via shared context and chase/chased split (no morphology, small corpus -> fastText next). Ran main.py (numpy) |
 
 ## Review queue
 - 03-deep-learning-core/06-optimizers — Adam default hyperparameters (lr=1e-3, b1=0.9, b2=0.999, eps=1e-8); momentum's effective lr = lr/(1-beta)
