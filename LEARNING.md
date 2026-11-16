@@ -58,6 +58,7 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 | 2026-11-11 | 05-nlp-foundations-to-advanced/01-text-processing | 2/3 | Predicted regex splits of 12.3/q8h and step-1a rule-order swap correctly; lemmatize missed watched (no ed rule) and (ran,NOUN) table miss; spaCy fix = built-in POS tagger; quiz picked spaCy for transformer pipeline |
 | 2026-11-11 | 05-nlp-foundations-to-advanced/02-bag-of-words-tfidf | 2/3 | Warm-up: said ponies->ponie (ies rule gives poni). Got df/IDF (the=1), long-doc bias without L2; thought stop_words='english' keeps 'no' (it removes no/not/of/without); asked for full vectorizer-param walkthrough; quiz picked PCA for TF-IDF-weighted embedding |
 | 2026-11-14 | 05-nlp-foundations-to-advanced/03-word-embeddings-word2vec | 3/3 | Started from own question 'how are embeddings made' (warm-up skipped); saw febrile/afebrile antonyms land close; explained chased~a via shared context and chase/chased split (no morphology, small corpus -> fastText next). Ran main.py (numpy) |
+| 2026-11-17 | 05-nlp-foundations-to-advanced/04-glove-fasttext-subword | 2/3 | Warm-up: asked what CBOW is; picked post-training projection as embedding matrix (it's W). Reasoned ceftobiprole OOV in word2vec vs fastText n-gram overlap with ceft- drugs; asked what OOV is; got tokenizer-must-match (5-01 review item) right; picked 'small corpus' for fastText over GloVe |
 
 ## Review queue
 - 03-deep-learning-core/06-optimizers — Adam default hyperparameters (lr=1e-3, b1=0.9, b2=0.999, eps=1e-8); momentum's effective lr = lr/(1-beta)
@@ -65,3 +66,4 @@ Note: Phase 5 is marked Review (not Skip) because the NLP & Transformers area sc
 - 03-deep-learning-core/13-debugging-neural-networks — val loss flat from the start = suspect data pipeline (train/val mismatch), not classic overfitting; overfit-one-batch is a screen, passing doesn't prove no bug
 - 05-nlp-foundations-to-advanced/01-text-processing — transformer pipelines use the model's own paired tokenizer (token IDs must match the embedding vocab), not spaCy/NLTK; lemmatization needs correct POS
 - 05-nlp-foundations-to-advanced/02-bag-of-words-tfidf — TF-IDF weighted embedding = weighted average of token embeddings using TF-IDF scores as weights; sklearn stop_words='english' deletes negations (no/not/without)
+- 05-nlp-foundations-to-advanced/04-glove-fasttext-subword — pick fastText over GloVe for OOV-heavy text (misspellings, new drug names, morphologically rich languages); word2vec embedding = W (center table), not W'
